@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<head class="text-center bg-grey">
+    <title>Lighting Strike3045</title>
+    <link rel="icon" href="icon.ico">
+</head>
+
+<div style="width: 100%;">
+    <div style="float:left; width: 18%">
+
+        <body class="bg-gradient-to-r from-slate-800 to-rose-700">
+            <span class="absolute text-slate-200 text-4xl top-5 left-4 cursor-pointer" onclick="openSidebar()">
+                <i class="bi bi-filter-left px-2 bg-slate-900 rounded-md"></i>
+            </span>
+            <div class="sidebar absolute top-0 bottom-0 lg:left-0 text-center bg-slate-750 border-slate-500 border-r-2 px-7"
+                style="width: 20%">
+                <div class="text-gray-100 text-xl">
+                    <div class="p-2.5 mt-1 flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12" src="icon.ico" alt="Logo" />
+                        </div>
+                        <h1 class="font-bold text-gray-200 text-[15px] ml-3">Lightning Strike</h1>
+                        <i class="bi bi-x cursor-pointer ml-28 lg:hidden" onclick="openSidebar()"></i>
+                    </div>
+                    <div class="my-2 bg-gray-600 h-[1px] px-5"></div>
+                </div>
+                <div class="p-2.5 flex items-center rounded-md px-4 cursor-pointer bg-gray-700 text-white px-5">
+                    <i class="bi bi-search text-sm"></i>
+                    <input type="text" placeholder="Search"
+                        class="text-[15px] ml-4 w-full bg-transparent focus:outline-none" />
+                </div>
+                <div
+                    class="p-2.5 mt-3 flex items-center rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white px-5">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span class="text-[15px] ml-4 text-gray-200 font-bold">Home</span>
+                </div>
+                <div
+                    class="p-2.5 mt-3 flex items-center rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white px-5">
+                    <i class="bi bi-bookmark-fill"></i>
+                    <span class="text-[15px] ml-4 text-gray-200 font-bold">Your Projects</span>
+                </div>
+                <div class="my-4 bg-gray-600 h-[1px]"></div>
+
+                <div
+                    class="p-2.5 mt-3 flex items-center rounded-md px-4 cursor-pointer hover:bg-blue-600 text-whitepx-5">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span class="text-[15px] ml-4 text-gray-200 font-bold">Login</span>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function dropdown() {
+                    document.querySelector("#submenu").classList.toggle("hidden");
+                    document.querySelector("#arrow").classList.toggle("rotate-0");
+                }
+                dropdown();
+
+                function openSidebar() {
+                    document.querySelector(".sidebar").classList.toggle("hidden");
+                }
+            </script>
+            <script>
+                function openSidebar() {
+                    document.querySelector('.sidebar').classList.toggle('hidden');
+                }
+
+                function shrinkSidebar() {
+                    document.querySelector('.sidebar').classList.toggle('shrink');
+                }
+            </script>
+
+        </body>
+    </div>
+
+    <div style="float:right; width: 80%">
+        <div class="place-content-center m-10 font-light text-3xl text-slate-200">
+            Choose the number of results u want your data to be altered into
+        </div>
+        <div class="flex items-start gap-2.5 place-content-center m-20">
+            <form class=" mx-auto">
+                <label for="number-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a
+                    number:</label>
+                <input type="number" id="number-input" aria-describedby="helper-text-explanation" min="0" max="128"
+                    class="px-20 bg-gray-50 max-w-bg border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required />
+                <button
+                    class="m-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    type="submit">
+                    > Submit!
+                </button>
+            </form>
+        </div>
+
+</html>
